@@ -17,7 +17,7 @@
       color: #2c3e50;
     }
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       background: white;
       padding: 2rem;
@@ -29,7 +29,7 @@
       padding: 0;
     }
     li {
-      margin: 1rem 0;
+      margin: 1.2rem 0;
     }
     a {
       text-decoration: none;
@@ -45,6 +45,35 @@
       margin-bottom: 2rem;
       color: #7f8c8d;
     }
+    .preview {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .card {
+      background-color: #ecf0f1;
+      padding: 1rem;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+    .card a {
+      font-weight: bold;
+      display: block;
+      margin-top: 0.5rem;
+    }
   </style>
 </head>
 <body>
@@ -52,8 +81,19 @@
     <h1>📊 My EDA Reports Hub</h1>
     <p class="subtitle">Explore insightful data stories powered by YData Profiling</p>
     <ul>
-      <li><a href="ydata/laptop_report.html" target = _blank>🛒 Laptop Report</a></li>
+      <li><a href="ydata/laptop_report.html" target = "_blank">🛍️ Laptop Report</a></li>
     </ul>
+
+    <div class="preview">
+      <div class="card">
+        <img src="image.png" alt="Laptop Report Preview">
+        <a href="reports/laptop_report.html">View Laptop Report</a>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/250x150.png?text=More+Coming+Soon" alt="Placeholder">
+        <span>More Reports Coming 🔜</span>
+      </div>
+    </div>
   </div>
 </body>
 </html>
